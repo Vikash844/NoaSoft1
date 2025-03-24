@@ -81,7 +81,7 @@ const AboutUs = () => {
           {/* <a href="https://play.google.com" target="_blank" rel="noopener noreferrer">
             <img src={playStoreImage} alt="Get it on Google Play" className="play-store-btn" />
           </a> */}
-          <p className="availability-note">*Currently available in Bharat</p>
+          <p className="availability-note">Currently available in Bharat</p>
         </div>
         {/* <div className="school-aura-image">
           <img src={schoolAuraImage} alt="SchoolAura Mobile App" />
