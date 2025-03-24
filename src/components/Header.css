@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .logo{
+    position: relative;
+    left: 70px;
+  }
+  
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .nav a {
+    margin: 0 18px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .nav a:hover, .nav a.active {
+    color: #283593;
+    border-bottom: 2px solid #283593;
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+  }
+
+  .register-btn {
+    background-color: transparent;
+    border: 2px solid #283593;
+    color: #283593;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 50px;
+  }
+
+  .login-btn {
+    background-color: transparent;
+    border: 2px solid #283593;
+    color: #283593;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+
+  }
+  
+  .login-btn:hover,
+  .register-btn:hover {
+    background-color: #283593;
+    color: #fff;
+  }
+  /* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 4px 4px;
+    cursor: pointer;
+  }
+  
+  /* Dropdown container */
+  .dropdown-content {
+    position: absolute;
+    background-color: white; /* Pure white background */
+    min-width: 250px;
+    border-radius: 8px;
+    padding: 0; /* Remove extra padding */
+    top: 100%;
+    left: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.25s ease-in-out;
+    border: 1px solid #ddd; /* Light border for separation */
+  }
+  
+  /* Dropdown items */
+  .dropdown-content a {
+    display: block;
+    color: #333; /* Dark text for contrast */
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 16px; /* Adjust padding */
+    transition: background 0.2s ease-in-out;
+    border-bottom: 1px solid #eee; /* Light separator */
+  }
+  
+  /* Remove border for last item */
+  .dropdown-content a:last-child {
+    border-bottom: none;
+  }
+  
+  /* Hover effect */
+  .dropdown-content a:hover {
+    background: #f5f5f5; /* Light gray hover effect */
+  }
+  
+  /* Smooth dropdown animation */
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  

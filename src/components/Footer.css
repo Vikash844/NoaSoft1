@@ -1,0 +1,93 @@
+/* Ensure the footer fills the entire bottom width and stays fixed when needed */
+.footer {
+    background-color: #283593;
+    color: white;
+    padding: 40px 0;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    position: relative; /* Ensures it stays within the content flow */
+    bottom: 0;
+    left: 0;
+}
+
+/* Container for footer content */
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Align columns properly */
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Ensure padding on both sides */
+}
+
+/* Each footer column */
+.footer-column {
+    width: 22%;
+    min-width: 200px;
+    text-align: left; /* Align text properly */
+}
+
+/* Footer headings */
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Small underline below headings */
+.underline {
+    width: 40px;
+    height: 3px;
+    background-color: gray;
+    margin-bottom: 10px;
+}
+
+/* Footer paragraph */
+.footer p {
+    color: #ccc;
+    line-height: 1.5;
+}
+
+/* Footer links */
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 8px;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Ensuring the footer always stays at the bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the page takes full height */
+    margin: 0;
+}
+
+.main-content {
+    flex: 1; /* Pushes footer to the bottom when content is short */
+}
+
+/* Media query for better mobile responsiveness */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
